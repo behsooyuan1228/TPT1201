@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage{mathptmx}
+\usepackage{times}
+\usepackage{url}
+\usepackage[margin=0.9in,footskip=0.25in]{geometry}
+
+\usepackage{array}
+
+\title{Image Recognition Technique of Road Tax sticker in Malaysia}
+
+\author{Beh Soo Yuan 1121116550\\Dorothea A/P Vincent 1121117087}
+
+\begin{document}
+
+\maketitle
+\abstract{The inspection of car Road Tax information in Malaysia has been difficult as the employment of recognition system is limited due to the great incline of transportation systems. In order to combat this difficulty, this paper suggested a new image recognition technique known as Road Tax Recognition (RTR) system using capture and separate the image of Road Tax sticker automatically.  RTR is a type of new image processing technology to detect Road Tax sticker with license plate of vehicles, besides associating the accuracy of the matched information. With this new implementation, police will not have to match manually the vehicle plate number with Road Tax sticker and check its expiry date. Furthermore, the method proposed by the article is widespread in terms of localization and recognition of different environmental conditions using Neura Network techniques.}
+
+\section{Problem solved}
+Since the employment of recognition system in Malaysia is restricted to the plate number of vehicle, the system could not sense the Road Tax stickers. Because of it, the police will not have to match manually the vehicle plate number with Road Tax sticker and check its expiry date. This article proposes a new image recognition technique to capture and separate the image of Road Tax sticker automatically using Neural Network. With the development of vehicle RTR system, vehicles in Malaysia can be monitor in an easy and effective way. Thus vehicle monitoring system will become more efficient in Malaysia. \cite{6516388}
+
+\section{Related work/Prior research}
+This research contributes to a better monitoring system at Toll Gates in Malaysia and it will also strengthen the security of the area and traffic installation by verifying the details of the road tax sticker.
+
+License Plate Recognition is being introduced into the industry at an increasing rate for many purposes. Research in the area of LPR has followed several approaches. In the paper of Yao Yuan, Wu xiao-li (2010) and Li Fuliang, Gao Shuangxi (2010) was solving the plate character recognition based on Neural Network.\cite{bpnn}\cite{digitalImg} Rodolfo Zunino, Stefano Rovetta (2000) have used Vector Quantization based image coding to obtain image compression for archival propose and to support the location process.\cite{vq} Several researchers addressed the problem of random noise disturbances due to the distance and lightning. So in Li Fuliang, Gao Shuangxi (2010) studied this problem can be improve by using back- propagation network. 
+
+The shortcoming found in the prior literature of the selected article addresses is only in the Li Fuliang, Gao Shuangxi (2010) studied. The studies are lack of graphical evidence to prove the result.The research paper of the (Image Recognition Technique of Road Tax sticker in Malaysia) have carried out few tests to evaluate the effectiveness of the technique chosen. Thus, proving that the methods used are effective based on the data and result gain from the test.\cite{bpnn}
+
+The authors have performed a well cited. Thus, there are no any relevant articles that have not been cited by the authors
+
+
+\section{Methodology}
+The method used in the paper of RTR system has six stages. Starting from the stage of Image Acquisition to Regional location, followed by Road Tax extraction, Road tax segmentation, then information recognition and Recognition result stages.
+The first step of the RTR system uses a high-resolution digital camera to obtain the image of road tax sticker. It then separates the foreground image of the vehicle then changes to digital image signals from the camera's video signal. \cite{par}
+
+Next, the localization of the Road Tax sticker obtains the coordinates of the vehicle Road Tax sticker area from the vehicle picture, and then determine the sticker characters. Next, the image will be filtered to remove any noise and the Road Tax Sticker position is located by scanning the picture from left to right. Lastly, the sticker is scanned in parallel by shifting a square window while calculating the number of clusters inside. A square that contains the greatest number of clusters is the eventual position.   
+
+Then, extraction of road tax is used to convert the camera's video signal to digital image signals to be sent to the computer for processing. A border elimination mechanism is performed followed by the likeness of Road Tax Sticker altitude.  
+
+In the road tax segmentation step, character height is used to find out one important component among the set of linked component in the sticker. For a better result, Character Mending Procedure is introduced.
+
+In Character Recognition step, The Neural Network with Back Propagation Artificial (BP) is used to minimize the error sum squares of the network. Neural Network with Learning Vector Quantization (LVQ) is used to supervised learning to form classification. This two method are used, to ensure the best efficiency rate along with improved recognition momentum by Neural Network.\cite{location}\cite{bpnn}
+
+The method that has been used is suitable and appropriate in order to get the result they wanted. The authors have mostly used the research paper of Vehicle License plate recognition system as their reference. The important steps in this RTR system is the character recognition, so in the research paper, the authors have used Neural Network with BP Artificial method and Neural Network with LVQ method to do character recognition.  
+
+The possible problem that had been identified is when road tax area is ambiguous then the separation becomes difficult. The foreground design with characters in the road tax sticker is considered as a noise component. Besides, only the characters element within a limited range of this base condition are studied as number sticker else are considered disposed. Improper illuminations can cause the character breakage.
+
+Authors have carried out few test to evaluate the effectiveness of the technique by performing the Efficiency Test of Road Tax localization process and in the test they have gained 70\% in the trials. The second test they have performed is the Efficiency Test of character segmentation process. The test has gained 67\% in the trials. The last test is Efficiency Test of character recognition process and it gained 64\% in the trials. All test are using on the same data set.
+
+\section{Claimed Contributions}
+As a result from the methodology that has been implemented, the significant result obtained from the research paper is that the invention of a system which enables to identify Road Tax and license numbers precisely at toll gates. Three tests are performed namely the process of Efficiency Test of Road Tax localization, Efficiency Test of character segmentation, and Efficiency Test of character recognition to assess the effectiveness of the suggested technique. All three trials showed high percentage of accuracy from the various Road Tax types of data sets taken from Toll gates lighting. Thus, having these positive results, this clarifies the expiry date and plate number that is written in the stickers and matched with license plate.
+\section{Conclusion}
+The overall flow of the research is focused on the localization and identification of various Road Tax sticker images under many different environmental and brightness conditions based on Neural Network techniques. Not only that, feature eradication accesses was also been recommended. Found that the simulation accuracy is shown to be high and this is due to the fact that the fan beam feature eradication method consists of more features to train the Neural Network technique. The main feature that been explored through the research is on the separation and recognition methods. Therefore, manual method can be eliminated by implementing this particular technique in monitoring vehicles automatically by capturing and separating the image of Road Tax sticker.
+\section{What did you learn? And possible extension/Future work}
+This technique that been suggested is although universal, the average nature of images are limited by three elements: resolution 640x480 points, 24-bit or 8-bit colour space and of JPEG compression. As for future extension works, more fonts should be adopted for the network to improve the character detection. Besides that, as the images are limited to one format of JPEG, more research can be done to enable the efficiency of the system to be broad into other formats like PNG and BMP. 
+As this system is set at toll gates, where it captures the image of Road Tax when the vehicle is at stationary, expanding the system features so that it is able to detect and capture the image at any speed will be a great improvisation of the system. Therefore, this enables the system to be located not only at toll gates and also in other areas along highways.   
+
+\pagebreak
+\bibliographystyle{plain}
+\bibliography{refer}
+
+\begin{tabular}{|m{6cm} |m{10cm}|}
+\hline 
+Paper Title & \\ 
+\hline 
+Author(s) & \\ 
+\hline 
+Abstract/Summary & \\ 
+\hline 
+Problem Solved & \\ 
+\hline 
+Claimed Contributions & \\ 
+\hline 
+Related Work & \\ 
+\hline 
+Methodology & \\ 
+\hline 
+Conclusions & \\ 
+\hline 
+What did you learn 
+\newline (algorithms/experiments
+details)?
+\newline
+\newline 
+Possible extension/Future
+work & \\ 
+\hline 
+References & \\ 
+\hline 
+\end{tabular} 
+
+\end{document}
