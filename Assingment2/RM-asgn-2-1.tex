@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+\usepackage{mathptmx}
+\usepackage{amsmath}
+\usepackage{times}
+\usepackage{url}
+\usepackage[margin=0.9in,footskip=0.25in]{geometry}
+
+\usepackage{array}
+
+\title{INTELLIGENT CAR-SEARCHING SYSTEM FOR LARGE PARK}
+
+\author{Beh Soo Yuan 1121116550\\Dorothea A/P Vincent 1121117087}
+
+\begin{document}
+
+\maketitle
+
+\section{Executive Summary of Research Proposal}
+It is very common for us to forget where we parked our car at the parking space. We tend to spend so much time finding our car. This write up provides a useful recommendation to manage cars at the parking space. The Intelligent Transportation Systems (ITS) proposes a smart way to search car at large parking lots efficiently. ITS also provides intelligent parking guide, car parking occupation information and reverse car-searching. ITS saves time of drivers in car-searching. At each road, there are cameras installed. The color of car and license plate are scanned and kept in the database. The license plate recognition for ITS is built by considering the fact that there is no system to recognize license plate perfectly. The license plate is identified with an algorithm based on license plate identification sameness along with the color categorization probabilities. ITS is evaluated in a huge outdoor park. The proposed research draws expectations to a precise recognition of license plate and color of the car for an efficient car-searching system. The outcome of the pre-test is determined based on the captured image and color clustering, resulting in the vehicle detection. This output signifies the importance of the research in providing an intelligent car searching system based on vision information, which shows higher positive probability of quick car search.
+
+\section{Introduction}
+The parking lot management system is one of the important areas in ITS (intelligent transportation systems). This management system comprises the method of counting the number of cars that has been parked with their elapsed time. This research concentrates on the development of intelligent parking lot management system with the aid of ITS and computer vision, in order to provide a better functional car-searching system. 
+The efficiency of available parking spaces searching function is achieved through several ways which covers calculating the quantity of parked motor vehicles, observe the difference of the parked vehicles over the time and determine location to escort drivers finding a vacant parking space proficiently. Intelligent reverse car-searching system (IRSS) is used to search cars especially in large parks. This system involves two methods, namely license number analyze technique and placing by card reader technique, where car reader terminals are set all over the park. There are also approaches taken where few cameras are set up to trail the passed cars by the license plate identification system and travel paths are copied. After that, the drivers will be able to find for their vehicles by license plate. This is only possible if the license plates are recognized accurately, or drivers update the card reader before leaving the park. 
+This paper focuses a new method of car searching which is proposed mainly on vision information. This system improvises the present method by three additional points. Firstly, both the data of license plate identification and car color categorization is applied in improving the toughness of car-searching technique. Later, the likeness of vision information on the input conditions, comprising plate of license and color of car, are jointed. Thirdly, deleting invalid data process is formed to advance the retrieval speed, believing the license plates may not be identified correctly. 
+
+\section{Justification of Research}
+The proposed research is very important as the current approaches although are made to be efficient in car parking management system, there are some issues found to be associated with the system.  Firstly, the available approach will only work if the license plates are recognized correctly, or if only the drivers update the card reader before leaving the park, where many drivers failed to do so. Not only that, many cases stated that if the license plate recognition technique does not record the right license plate, the vehicle cannot be searched efficiently. Hence, joining both the data of license plate identification along with the car color will be able to combat this drawback issues. This research also thus enables a faster management of parking spaces, and drivers can reduce their time and hassle looking for an empty space. 
+
+\section{Research Objectives}
+-To provide an efficient car-searching system
+-To process a variety of functions like intelligent parking guide, car parking occupation information, and reverse car-searching
+-To reduce the time consumed for a driver in the search of his car especially in larger location
+
+\section{Literature Review}
+Despite that there are researches that have been proposed about the car park system for the driver in order to search for their vehicle and to look for car park space easily. However, because of the increasing of the space of the car park it will increase the difficulty for the driver to look for their vehicle in this large car park. This is because the number of cars is increasing day by day, and the car park is becoming bigger and more levels. 
+
+For the purpose of this studies (HUA-CHUN TAN, JIE ZHANG, XIN-CHEN YE, HUI-ZE LI, PEI ZHU, QING-HUA ZHAO,2009) proposed to improve the accuracy of the car searching system by using the licenses plate recognition and the color of the cars.\cite{a} Next is to make sure that the system will retrieve all the record that have a similar color of the car and license plate. Since the system might have an incorrect recognition record, deleting an invalid data is proposed to improve the retrieval speed of the system.
+	
+Because of the similarity of the surrounding and also many levels of car park. Intelligent reverse car- searching system (IRSS) has been implemented. This method is a method to localize the car by license plate and card reader (Beijing UnisPark Technology Co. Ltd)\cite{b}. Through this method, the drivers need to find the car by using a card reader terminal which is provided by the car park management. Other than that, Xiamen Baoneng Technilogy Co.\cite{c} Ltd have also developed an Intelligent car-searching system based on vision information, which is using the camera to record down the path of passed car by license plate recognition system. With this, the driver can search the location of their car by the license plate number through the machine, whenever the driver forgot their car location.
+
+Although that this two method (license plate and card reader) performed a good recognition. Still, sometimes the driver might forget to record their location by the card at the card reader machine. Also, because that there is no 100\% accuracy of the license plate recognition system, sometimes the system wont be able to retrieve an accurate result for the driver. 
+
+Based on Huaifeng Zhang, Wenjing Jia, Xiangjian He, and Qiang Wu,(2006) research, they have proposed a verification method for detection moving object. This method is implemented by the global statistical features. The local haar-like features are used as a guide in order for the license plate detection to be done. From a simple learning procedure classifiers that are using the global statistical features are constructed. Through this, 70\% of background area can be excluded from any further training or detecting. As for the other classifiers, the selected Haar-like features were chosen as a sample to produce the AdaBoost learning algorithm. Cascade classifier is obtained by combining the classifiers (the global features and the local features) and followed by an experiment, they have received an encouraging rate of detection based on result taken.\cite{adboost}
+ 
+Without the license plate recognition system, the car-searching system will not work perfectly. This is because, the license plate number is unique for every vehicle, with this, it is easier to identify and to find a car with extra information such as the vehicle plate number along with the color of the vehicle. Thus, Hua-chun Tan and Hao chen (2008) have proposed an algorithm for license plate localization. In this method they combined all the auto correction curve, projection properties and character position features based on binary image together to verify the selected image. In addition, they have also used Niblack method together with post process for bringing a clear binary image of the car license plate.  \cite{acbm}
+
+Lastly, Projection-based method that were proposed in the system (Yinpeng Chen, Xiaoqing Ding,2004) (the segmentation) is also applied as part of the process, in order for the image to become much clearer so that the result will be accurate. \cite{segment}
+
+
+
+
+\section{Research Methodology}
+
+
+The first step of the method in this system is the capturing image method, cameras are set at every junction of the road to detect car that are passing by and also automatically capturing the image down.
+Since the camera will only stay at a fixed position, background pictures are provoked firstly to find motive object. Next, the car will be detected by the motion detection, after that it will be verified through Adaboost- based method, which, is used to verify whether the motion object is car.\cite{adboost} If there is a car detected, the position and car size will be recorded and save to the database for car plate identification and color categorization.
+
+The third step in this system, is the License plate detection, from the vehicle detection process, the auto-correlation based method \cite{acbm}is used to detect the license plate of the car. Then, the projection-based method is used to segment the character of the license plate.\cite{segment} After the segmentation process is done, the character will be recognized by the pattern-match based method but not for the Chinese character. In order for the Chinese character to be recognize, BP network classifier is used to recognize the Chinese characters. To improve the accuracy of detection the system saves all the possibilities character to the database for efficiency searching.
+
+In the color classification method, the area of car is extracted based on location and size of the car, to cluster the majority color of the car in that area. Then Bayesian classifier are applied to classified the majority color of the car to one out of ten types predefined color. Since the color recognition might have an inaccuracy result, so the possibilities of the color classifier are save into database for searching.
+
+The next method is car searching process and data management, if user wants to search for their car, user needs to input their car plate number and also their vehicle color. After that the system will show the result according to the user input. All the searching record are saved according to car license plate number. When there is a wrongly recognition process, the database cannot delete the record by itself even when the car has left the car park. This situation will thus slow down the searching speed of the system due to a lot of invalid record in the database, in order to solve this problem the author proposed to delete the car records by parking time. If the car has no record for a long time, then the system will inform the car park management to check and delete the record.
+
+To improve the performance of the car searching system, new method has been implemented, which is, by using both license plate and color to do the car searching. Sometimes, the searching result may be incorrect. Thus, an equation is proposed to calculate the similarities between user input and all the saved data. Where $S_i$ signifies the similarity between input status with the \textit{i}th data in database, p{ij} is the probability of \textit{j}th character of the \textit{i}th data with the input \textit{j}th character, $q_i$ is the chance between the color of the \textit{i}th data with the searching color. 
+
+\begin{equation}
+S_i =\prod_{j=1}^7 p_{ij} * q_i 
+\end{equation}
+
+From this research paper, an experiment had been carried out by recording three video in an outdoor car park. Passing by car and car plate number will be detected from the captured image. Based on the position of the vehicle, the color of the cars is clustered into 3 classes. This experiment had detected 200 cars. From the result of pre-process, vehicle plate of license and color of the vehicle are detected and recognized. They have developed the prototype of the system using C++, this system will generate 10 results grouped by similarity between the record and user input. From the experiment result, all the cars can be retrieve in the first 10 pictures.
+
+
+
+\pagebreak
+
+\bibliographystyle{plain}
+\bibliography{refer}
+
+\begin{tabular}{|m{6cm} |m{10cm}|}
+\hline 
+Title of research project & Intelligent Car-Searching System For Large Park\\ 
+\hline
+Member of project & Dorothea A/P Vincent (1121117087) \newline Beh Soo Yuan (1121116550) \\ 
+\hline 
+Executive Summary (5 marks) & \\ 
+\hline 
+Introduction (3 marks) & \\ 
+\hline 
+Justification of Research (3
+marks) & \\ 
+\hline 
+Research Objectives (3 marks) & \\ 
+\hline 
+Literature Review (6 marks) & \\ 
+\hline 
+Research Methodology (8 marks) & \\ 
+\hline 
+References (2 marks) & \\
+\hline 
+\end{tabular} 
+
+\end{document}
